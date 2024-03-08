@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kumar Ritesh Raushan</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="#home" class="logo">Kumar <span>Ritesh Raushan</span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Kumar Ritesh Raushan</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aperiam, possimus minus vero ad aspernatur eius tempora reprehenderit eligendi vel ex nisi accusamus nobis aut velit labore iure delectus cupiditate.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="/portfolio/images/front-img.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/portfolio/images/front-img.png" alt="image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I'm Kumar Ritesh Raushan, a web developer skilled in HTML, CSS, and JavaScript. I'm fueled by a passion for problem-solving, creating smooth online experiences. My journey extends into the realm of AIML, where I'm fascinated by the synergy of technology and intelligence. Join me on this coding adventure as we blend creativity and innovation to shape the digital landscape. Let's build a future where technology and human ingenuity coexist harmoniously.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Interfaces</li>
+                                <li><span>Python Programming</span><br>A good knowledge of Python</li>
+                                <li><span>Discord Bot Developer</span><br>Developed Elissa - A General Purpose Discord Bot</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiance">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Interfaces</li>
+                                <li><span>Python Programming</span><br>A good knowledge of Python</li>
+                                <li><span>Discord Bot Developer</span><br>Developed Elissa - A General Purpose Discord Bot</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Interfaces</li>
+                                <li><span>Python Programming</span><br>A good knowledge of Python</li>
+                                <li><span>Discord Bot Developer</span><br>Developed Elissa - A General Purpose Discord Bot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class='bx bx-envelope' ></i> rausahnritesh@gmail.com</p>
+                        <p><i class='bx bx-phone' ></i> 8797678998</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                            <a href="#"><i class='bx bxl-github' ></i></a>
+                            <a href="#"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-twitter' ></i></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
