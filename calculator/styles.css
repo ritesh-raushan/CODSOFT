@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/calculator/images/calculator-background.jpg);
+    background-image: url(/images/calculator-background.jpg);
 }
 .calculator {
     background-color: #f79df7;
